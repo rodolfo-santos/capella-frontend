@@ -53,7 +53,11 @@ npm install
 4. Run the development server:
 
 ```sh
+<<<<<<< HEAD
 npm run dev
+=======
+npm run serve
+>>>>>>> da920f5... 📝 adding readme
 ```
 
 ## Contributing
