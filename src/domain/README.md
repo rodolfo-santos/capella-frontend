@@ -15,12 +15,12 @@ The `domain` directory is central to the Domain-Driven Design (DDD) approach. It
 
 ## Directory Structure
 
-- **/entities**: Contains the primary entities of the domain.
-- **/value-objects**: Houses value objects which are immutable and don't have a unique identity.
 - **/aggregates**: Groups related entities and value objects into a cohesive unit.
-- **/events**: Contains domain events.
+- **/entities**: Contains the primary entities of the domain.
 - **/enums**: Contains any domain-specific enumerations.
+- **/events**: Contains domain events.
 - **/exceptions**: For domain-specific exception classes.
+- **/value-objects**: Houses value objects which are immutable and don't have a unique identity.
 
 ## Example
 
