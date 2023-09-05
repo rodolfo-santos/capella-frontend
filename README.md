@@ -54,10 +54,14 @@ npm install
 
 ```sh
 <<<<<<< HEAD
+<<<<<<< HEAD
 npm run dev
 =======
 npm run serve
 >>>>>>> da920f5... 📝 adding readme
+=======
+npm run dev
+>>>>>>> 0ab449f... 📝 fix command line
 ```
 
 ## Contributing
