@@ -53,7 +53,7 @@ npm install
 4. Run the development server:
 
 ```sh
-npm run serve
+npm run dev
 ```
 
 ## Contributing
