@@ -1,68 +1,69 @@
-# capella-frontend
+# Capella Frontend
 
-This template should help get you started developing with Vue 3 in Vite.
+A frontend project showcasing the implementation of Domain-Driven Design (DDD) and Clean Architecture principles using Vue.js.
 
-## Recommended IDE Setup
+## Why "Capella"?
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+The name "Capella" is inspired by one of the brightest stars in the night sky. Just as stars provide guidance in the darkness, this project aims to guide developers through the complexities of modern frontend architecture.
 
-## Type Support for `.vue` Imports in TS
+## Overview
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+This project is designed to serve as a practical example for those interested in adopting DDD and Clean Architecture in frontend applications. By structuring the application this way, we aim for modularity, scalability, and maintainability, making it easier to understand, adapt, and expand upon.
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+## Features
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+- User registration and authentication.
+- A dashboard providing an overview of user activities.
+- Category listings for items.
+- Modular components for easy UI management.
 
-## Customize configuration
+## Project Structure
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- `src/`: Main source directory.
+  - `application/`: Application layer housing use cases and business logic.
+  - `assets/`: Static assets like images, fonts, and styles.
+  - `components/`: Reusable Vue components.
+  - `domain/`: Domain layer with entities, aggregates, and value objects.
+  - `infrastructure/`: Technical concerns like database or API interactions.
+  - `pages/`: Represents different routes or screens of the app.
+  - `router/`: Manages and defines the app's routing logic.
+  - `utils/`: Utility functions, helpers, and shared logic.
 
-## Project Setup
+## Setup and Installation
+
+1. Clone the repository:
+
+```sh
+git clone git@github.com:rodolfo-santos/capella-frontend.git
+
+```
+
+2. Navigate to the project directory:
+
+```sh
+cd capella-frontend
+```
+
+3. Install dependencies:
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+4. Run the development server:
 
 ```sh
-npm run dev
+npm run serve
 ```
 
-### Type-Check, Compile and Minify for Production
+## Contributing
 
-```sh
-npm run build
-```
+If you wish to contribute to this project, please follow our [contributing guidelines](CONTRIBUTING.md).
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+## License
 
-```sh
-npm run test:unit
-```
+This project is licensed under the [MIT License](LICENSE).
 
-### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
+## Acknowledgements
 
-```sh
-npm run test:e2e:dev
-```
-
-This runs the end-to-end tests against the Vite development server.
-It is much faster than the production build.
-
-But it's still recommended to test the production build with `test:e2e` before deploying (e.g. in CI environments):
-
-```sh
-npm run build
-npm run test:e2e
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+A special thanks to the community and all contributors. Your feedback and contributions make this project better every day.
